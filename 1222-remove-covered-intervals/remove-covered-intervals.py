@@ -1,7 +1,7 @@
 class Solution:
     def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
         intervals.sort(key=lambda x:(x[0],-x[1]))
-        prev=intervals[0]
+        print(intervals)
         cnt=0
         end=0
         for i,j in intervals:
